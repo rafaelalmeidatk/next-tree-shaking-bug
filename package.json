@@ -1,0 +1,13 @@
+{
+  "name": "next-tree-shaking-bug",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build-lib": "yarn workspace ui-lib build",
+    "analyze-app": "yarn workspace app analyze",
+    "build-and-analyze": "yarn build-lib && yarn analyze-app"
+  }
+}
